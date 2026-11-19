@@ -1,226 +1,149 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#10251d">
-<title>A little surprise for Faiq</title>
-
+<title>For Faiq Bhiyya | A Birthday Keepsake</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --green:#10251d;
-  --deep:#091710;
-  --gold:#d9bd7a;
-  --cream:#f5efdf;
-  --muted:#d5cbb2;
+  --cream:#f5eddf;
+  --paper:#fbf7ef;
+  --wine:#591e2a;
+  --gold:#b49a65;
+  --ink:#514337;
 }
-
-* { box-sizing:border-box; }
-
-body {
-  margin:0;
-  min-height:100vh;
-  background:radial-gradient(circle at 50% 0%,#294638 0,#10251d 48%,#091710 100%);
-  color:var(--cream);
-  font-family:Georgia,'Times New Roman',serif;
-  display:grid;
-  place-items:center;
-  padding:24px;
-}
-
-main {
-  width:min(720px,100%);
-  text-align:center;
-  border:1px solid rgba(217,189,122,.55);
-  padding:clamp(28px,7vw,66px) clamp(20px,6vw,58px);
-  position:relative;
-  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(0,0,0,.12));
-  box-shadow:0 25px 80px #0008;
-}
-
-main:before,main:after {
-  content:"✦";
-  position:absolute;
-  color:var(--gold);
-  font-size:22px;
-}
-
-main:before { top:18px;left:20px; }
-main:after { bottom:18px;right:20px; }
-
-.seal {
-  width:58px;
-  height:58px;
-  border:1px solid var(--gold);
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  margin:0 auto 28px;
-  color:var(--gold);
-  font-size:25px;
-}
-
-.kicker {
-  letter-spacing:.28em;
-  text-transform:uppercase;
-  color:var(--gold);
-  font:11px Arial,sans-serif;
-}
-
-h1 {
-  font-weight:normal;
-  font-size:clamp(42px,9vw,72px);
-  line-height:1.05;
-  margin:20px 0 12px;
-}
-
-.subtitle {
-  font-style:italic;
-  color:var(--muted);
-  font-size:19px;
-}
-
-.rule {
-  width:72px;
-  height:1px;
-  background:var(--gold);
-  margin:30px auto;
-}
-
-button {
-  border:1px solid var(--gold);
-  background:var(--gold);
-  color:#17251d;
-  padding:15px 25px;
-  font:bold 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  cursor:pointer;
-  margin:12px 6px;
-}
-
-button:hover {
-  background:transparent;
-  color:var(--gold);
-}
-
-#letter {
-  display:none;
-  animation:rise .9s ease both;
-}
-
-#letter.show { display:block; }
-
-.message {
-  font-size:19px;
-  line-height:1.8;
-  color:#eee5d2;
-}
-
-.cake {
-  font-size:56px;
-  margin:28px 0 8px;
-  filter:drop-shadow(0 6px 12px #0007);
-}
-
-.signoff {
-  color:var(--gold);
-  font-style:italic;
-  font-size:20px;
-  margin-top:26px;
-}
-
-footer {
-  margin-top:35px;
-  color:#a99e84;
-  font:10px Arial,sans-serif;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-}
-
-@keyframes rise {
-  from { opacity:0;transform:translateY(18px); }
-  to { opacity:1;transform:translateY(0); }
-}
-
-@media(prefers-reduced-motion:reduce) {
-  * { animation:none!important;scroll-behavior:auto!important; }
-}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Montserrat, sans-serif}
+.hero{min-height:100svh;display:grid;place-items:center;padding:35px 20px}
+.frame{width:min(620px,100%);min-height:85vh;border:1px solid var(--gold);outline:1px solid #b49a6570;outline-offset:6px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:45px 24px;background:var(--paper)}
+.kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);line-height:1.8}
+.ornament{color:var(--gold);font-size:23px;letter-spacing:9px;margin:30px 0}
+h1{font:400 clamp(58px,12vw,91px)/.88 'Cormorant Garamond',serif;color:var(--wine);margin:25px 0}
+h1 em{display:block;font-size:.76em;margin-top:20px}
+.subtitle{font:italic 22px 'Cormorant Garamond',serif;color:#837665;line-height:1.5}
+.rule{width:80px;height:1px;background:var(--gold);margin:30px auto}
+.open{border:1px solid var(--gold);background:var(--wine);color:white;padding:18px 25px;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-top:20px}
+.open:disabled{opacity:.8}
+.content{display:none}
+.content.show{display:block;animation:fade 1.1s ease}
+@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.section{max-width:850px;margin:auto;padding:85px 20px;text-align:center}
+h2{font:400 clamp(44px,9vw,67px) 'Cormorant Garamond',serif;color:var(--wine);margin:18px 0}
+.intro{font:italic 22px 'Cormorant Garamond',serif;color:#837665;line-height:1.5}
+.photos{display:flex;justify-content:center;align-items:flex-start;gap:20px;margin:45px auto 35px}
+.photo{width:min(38%,220px);padding:8px;background:#fffdf8;border:1px solid var(--gold);box-shadow:0 10px 25px #3b29191a}
+.photo:nth-child(2){margin-top:25px}
+.photo img{display:block;width:100%;height:210px;object-fit:cover;border:1px solid #c9b58f}
+.caption{font:italic 17px 'Cormorant Garamond',serif;color:var(--wine);padding:13px 3px 7px}
+.dua{max-width:650px;margin:50px auto 0;padding:30px 22px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.dua h3{font:400 35px 'Cormorant Garamond',serif;color:var(--wine);margin:0 0 15px}
+.dua p{font:22px/1.75 'Cormorant Garamond',serif;color:#68594a;margin:0}
+.message{background:var(--wine);color:var(--cream);text-align:center;padding:85px 24px}
+.message h2{color:var(--cream)}
+.message p{max-width:620px;margin:18px auto;font:21px/1.8 'Cormorant Garamond',serif}
+.sign{font:italic 27px 'Cormorant Garamond',serif;color:#e4c994;margin-top:35px}
+.closing{text-align:center;padding:65px 20px;background:var(--paper)}
+footer{text-align:center;padding:22px;font-size:9px;letter-spacing:3px;color:#897b69}
+@media(max-width:420px){.frame{min-height:82vh;padding:35px 18px}.photos{gap:12px}.photo{width:43%}.photo img{height:175px}.dua p{font-size:20px}}
 </style>
 </head>
-
 <body>
-<main>
 
-  <div class="seal">F</div>
+<audio id="birthdayMusic" loop preload="none">
+  <source src="atlasaudio-soft-piano-581705.mp3" type="audio/mpeg">
+</audio>
 
-  <div class="kicker">A private little celebration</div>
-
-  <h1>Happy Birthday,<br>Faiq Bhiyya</h1>
-
-  <p class="subtitle">A little something, made just for you.</p>
-
-  <div class="rule"></div>
-
-  <button id="open" type="button">
-    Open your surprise
-  </button>
-
-  <div>
-    <button id="musicButton" type="button">
-      ♫ Play Birthday Music
-    </button>
+<header class="hero">
+  <div class="frame">
+    <div class="kicker">A personal birthday invitation</div>
+    <div class="ornament">✧ ───── ✧ ───── ✧</div>
+    <h1>Happy<br>Birthday<em>Faiq Bhiyya</em></h1>
+    <div class="rule"></div>
+    <p class="subtitle">A little keepsake, made with love.</p>
+    <button class="open" id="openButton">Open Your Surprise</button>
+    <div class="ornament">✧</div>
+    <div class="kicker">Made especially for you</div>
   </div>
+</header>
 
-  <audio id="birthdayMusic" loop preload="none">
-    <source src="atlasaudio-soft-piano-581705.mp3" type="audio/mpeg">
-  </audio>
+<main class="content" id="content">
+  <section class="section">
+    <div class="kicker">A collection of memories</div>
+    <h2>Moments to Remember</h2>
+    <p class="intro">Some memories deserve their own little place.</p>
 
-  <section id="letter" aria-live="polite">
+    <div class="photos">
+      <div class="photo">
+        <img src="file_00000000270481f4b6617c70cbb12b70.png" alt="A cherished memory">
+        <div class="caption">A beautiful memory</div>
+      </div>
+      <div class="photo">
+        <img src="IMG-20261112-WA0014.jpg" alt="A special memory">
+        <div class="caption">A moment to treasure</div>
+      </div>
+    </div>
 
-    <div class="cake">🎂</div>
-
-    <p class="message">
-      Wishing you a day filled with happiness, laughter, and moments worth remembering. May the year ahead bring you beautiful opportunities, good health, and countless reasons to smile. You deserve all the wonderful things life has to offer.
-    </p>
-
-    <p class="signoff">
-      With Love &amp; Best Wishes
-    </p>
-
+    <div class="dua">
+      <h3>A Special Dua</h3>
+      <p>
+        May Allah bless you with endless happiness,
+        good health, peace and barakah. May He guide
+        your every step, protect you from every hardship,
+        open doors of goodness for you and grant you
+        success in this world and the Hereafter.
+        Ameen.
+      </p>
+    </div>
   </section>
 
-  <footer>One special day · Endless good wishes</footer>
+  <section class="message">
+    <div class="kicker">A note from the heart</div>
+    <h2>For Faiq Bhiyya</h2>
+    <div class="ornament">✧</div>
+    <p>
+      Wishing you a beautiful birthday filled with
+      happiness, laughter and unforgettable moments.
+      May every new chapter bring you something
+      wonderful, and may you always have reasons
+      to smile.
+    </p>
+    <p>Here's to countless blessings and memories yet to come.</p>
+    <div class="sign">With Love &amp; Best Wishes</div>
+  </section>
 
+  <section class="closing">
+    <div class="ornament">✧</div>
+    <h2>A day as special as you.</h2>
+    <p class="intro">A little surprise, made with love.</p>
+  </section>
 </main>
 
-<script>
-document.getElementById('open').addEventListener('click',function(){
-  document.getElementById('letter').classList.add('show');
-  this.textContent='Your surprise is open';
-  this.disabled=true;
-});
+<footer>A PRIVATE BIRTHDAY KEEPSAKE · JUST FOR YOU</footer>
 
-const music = document.getElementById('birthdayMusic');
-const musicButton = document.getElementById('musicButton');
+<script>
+const music = document.getElementById("birthdayMusic");
+const openButton = document.getElementById("openButton");
+const content = document.getElementById("content");
 
 music.volume = 0.35;
 
-musicButton.addEventListener('click', async function() {
-  if (music.paused) {
-    try {
-      await music.play();
-      musicButton.textContent = '♫ Music Playing';
-    } catch (error) {
-      musicButton.textContent = '♫ Tap to Play Music';
-    }
-  } else {
-    music.pause();
-    musicButton.textContent = '♫ Play Birthday Music';
+openButton.addEventListener("click", async function() {
+  content.classList.add("show");
+  openButton.textContent = "Your Surprise Is Open";
+  openButton.disabled = true;
+
+  try {
+    await music.play();
+  } catch (error) {
+    console.log("Music playback was blocked or the audio file is unavailable.", error);
   }
+
+  setTimeout(() => {
+    content.scrollIntoView({behavior:"smooth"});
+  }, 250);
 });
 </script>
-
 </body>
 </html>
