@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,48 +6,221 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#10251d">
 <title>A little surprise for Faiq</title>
+
 <style>
-:root{--green:#10251d;--deep:#091710;--gold:#d9bd7a;--cream:#f5efdf;--muted:#d5cbb2}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0%,#294638 0,#10251d 48%,#091710 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;display:grid;place-items:center;padding:24px}
-main{width:min(720px,100%);text-align:center;border:1px solid rgba(217,189,122,.55);padding:clamp(28px,7vw,66px) clamp(20px,6vw,58px);position:relative;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(0,0,0,.12));box-shadow:0 25px 80px #0008}
-main:before,main:after{content:"✦";position:absolute;color:var(--gold);font-size:22px}main:before{top:18px;left:20px}main:after{bottom:18px;right:20px}
-.seal{width:58px;height:58px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;color:var(--gold);font-size:25px}
-.kicker{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font:11px Arial,sans-serif}
-h1{font-weight:normal;font-size:clamp(42px,9vw,72px);line-height:1.05;margin:20px 0 12px}
-.subtitle{font-style:italic;color:var(--muted);font-size:19px}
-.rule{width:72px;height:1px;background:var(--gold);margin:30px auto}
-button{border:1px solid var(--gold);background:var(--gold);color:#17251d;padding:15px 25px;font: bold 11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;margin-top:22px}
-button:hover{background:transparent;color:var(--gold)}
-#letter{display:none;animation:rise .9s ease both}#letter.show{display:block}
-.message{font-size:19px;line-height:1.8;color:#eee5d2}
-.cake{font-size:56px;margin:28px 0 8px;filter:drop-shadow(0 6px 12px #0007)}
-.signoff{color:var(--gold);font-style:italic;font-size:20px;margin-top:26px}
-footer{margin-top:35px;color:#a99e84;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
-@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+:root {
+  --green:#10251d;
+  --deep:#091710;
+  --gold:#d9bd7a;
+  --cream:#f5efdf;
+  --muted:#d5cbb2;
+}
+
+* { box-sizing:border-box; }
+
+body {
+  margin:0;
+  min-height:100vh;
+  background:radial-gradient(circle at 50% 0%,#294638 0,#10251d 48%,#091710 100%);
+  color:var(--cream);
+  font-family:Georgia,'Times New Roman',serif;
+  display:grid;
+  place-items:center;
+  padding:24px;
+}
+
+main {
+  width:min(720px,100%);
+  text-align:center;
+  border:1px solid rgba(217,189,122,.55);
+  padding:clamp(28px,7vw,66px) clamp(20px,6vw,58px);
+  position:relative;
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(0,0,0,.12));
+  box-shadow:0 25px 80px #0008;
+}
+
+main:before,main:after {
+  content:"✦";
+  position:absolute;
+  color:var(--gold);
+  font-size:22px;
+}
+
+main:before { top:18px;left:20px; }
+main:after { bottom:18px;right:20px; }
+
+.seal {
+  width:58px;
+  height:58px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  margin:0 auto 28px;
+  color:var(--gold);
+  font-size:25px;
+}
+
+.kicker {
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font:11px Arial,sans-serif;
+}
+
+h1 {
+  font-weight:normal;
+  font-size:clamp(42px,9vw,72px);
+  line-height:1.05;
+  margin:20px 0 12px;
+}
+
+.subtitle {
+  font-style:italic;
+  color:var(--muted);
+  font-size:19px;
+}
+
+.rule {
+  width:72px;
+  height:1px;
+  background:var(--gold);
+  margin:30px auto;
+}
+
+button {
+  border:1px solid var(--gold);
+  background:var(--gold);
+  color:#17251d;
+  padding:15px 25px;
+  font:bold 11px Arial,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  cursor:pointer;
+  margin:12px 6px;
+}
+
+button:hover {
+  background:transparent;
+  color:var(--gold);
+}
+
+#letter {
+  display:none;
+  animation:rise .9s ease both;
+}
+
+#letter.show { display:block; }
+
+.message {
+  font-size:19px;
+  line-height:1.8;
+  color:#eee5d2;
+}
+
+.cake {
+  font-size:56px;
+  margin:28px 0 8px;
+  filter:drop-shadow(0 6px 12px #0007);
+}
+
+.signoff {
+  color:var(--gold);
+  font-style:italic;
+  font-size:20px;
+  margin-top:26px;
+}
+
+footer {
+  margin-top:35px;
+  color:#a99e84;
+  font:10px Arial,sans-serif;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+
+@keyframes rise {
+  from { opacity:0;transform:translateY(18px); }
+  to { opacity:1;transform:translateY(0); }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * { animation:none!important;scroll-behavior:auto!important; }
+}
 </style>
 </head>
+
 <body>
 <main>
+
   <div class="seal">F</div>
+
   <div class="kicker">A private little celebration</div>
+
   <h1>Happy Birthday,<br>Faiq Bhiyya</h1>
+
   <p class="subtitle">A little something, made just for you.</p>
+
   <div class="rule"></div>
-  <button id="open" type="button">Open your surprise</button>
+
+  <button id="open" type="button">
+    Open your surprise
+  </button>
+
+  <div>
+    <button id="musicButton" type="button">
+      ♫ Play Birthday Music
+    </button>
+  </div>
+
+  <audio id="birthdayMusic" loop preload="none">
+    <source src="atlasaudio-soft-piano-581705.mp3" type="audio/mpeg">
+  </audio>
+
   <section id="letter" aria-live="polite">
+
     <div class="cake">🎂</div>
-    <p class="message">Wishing you a day filled with happiness, laughter, and moments worth remembering. May the year ahead bring you beautiful opportunities, good health, and countless reasons to smile. You deserve all the wonderful things life has to offer.</p>
-    <p class="signoff">With Love &amp; Best Wishes</p>
+
+    <p class="message">
+      Wishing you a day filled with happiness, laughter, and moments worth remembering. May the year ahead bring you beautiful opportunities, good health, and countless reasons to smile. You deserve all the wonderful things life has to offer.
+    </p>
+
+    <p class="signoff">
+      With Love &amp; Best Wishes
+    </p>
+
   </section>
+
   <footer>One special day · Endless good wishes</footer>
+
 </main>
+
 <script>
 document.getElementById('open').addEventListener('click',function(){
   document.getElementById('letter').classList.add('show');
   this.textContent='Your surprise is open';
   this.disabled=true;
 });
+
+const music = document.getElementById('birthdayMusic');
+const musicButton = document.getElementById('musicButton');
+
+music.volume = 0.35;
+
+musicButton.addEventListener('click', async function() {
+  if (music.paused) {
+    try {
+      await music.play();
+      musicButton.textContent = '♫ Music Playing';
+    } catch (error) {
+      musicButton.textContent = '♫ Tap to Play Music';
+    }
+  } else {
+    music.pause();
+    musicButton.textContent = '♫ Play Birthday Music';
+  }
+});
 </script>
+
 </body>
 </html>
